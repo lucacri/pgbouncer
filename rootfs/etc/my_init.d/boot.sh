@@ -40,7 +40,7 @@ then
         echo '"'"${PG_POSTGRES_USER}"'" "'"${PG_POSTGRES_PASS}"'"'  > /etc/pgbouncer/userlist.txt
 fi
 
-chown -R root:postgres /etc/pgbouncer
+chown -R postgres:postgres /etc/pgbouncer
 chown root:postgres /var/log/postgresql
 chmod 1775 /var/log/postgresql
 chmod 640 /etc/pgbouncer/userlist.txt
