@@ -21,6 +21,7 @@ max_client_conn = ${PGBOUNCER_MAX_CLIENT_CONN}
 default_pool_size = ${PGBOUNCER_POOL_SIZE}
 ignore_startup_parameters = extra_float_digits
 server_idle_timeout = ${PGBOUNCER_IDLE_TIMEOUT}
+admin_users = ${PG_POSTGRES_USER}
 EOF
 fi
 

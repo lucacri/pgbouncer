@@ -1,4 +1,4 @@
-FROM lucacri/alpine-base:3.6
+FROM lucacri/alpine-base:3.7.0
 MAINTAINER "Luca Critelli" <lucacri@gmail.com>
 
 
@@ -18,6 +18,3 @@ ENV PG_POSTGRES_PASS postgres
 ENV PGBOUNCER_MAX_CLIENT_CONN 10000
 ENV PGBOUNCER_POOL_SIZE 400
 ENV PGBOUNCER_IDLE_TIMEOUT 240
-
-ENTRYPOINT ["/init"]
-CMD []
