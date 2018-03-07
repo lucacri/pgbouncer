@@ -1,4 +1,4 @@
-FROM lucacri/alpine-base:3.7.0
+FROM lucacri/alpine-base:3.7.1
 MAINTAINER "Luca Critelli" <lucacri@gmail.com>
 
 
