@@ -1,6 +1,5 @@
-FROM lucacri/alpine-base:3.7.1
+FROM lucacri/alpine-base:3.9
 LABEL maintainer="lucacri@gmail.com"
-
 
 RUN apk --no-cache add \
 curl \
@@ -18,3 +17,4 @@ ENV PG_POSTGRES_PASS postgres
 ENV PGBOUNCER_MAX_CLIENT_CONN 10000
 ENV PGBOUNCER_POOL_SIZE 400
 ENV PGBOUNCER_IDLE_TIMEOUT 240
+ENV PGBOUNCER_POOL_MODE session
